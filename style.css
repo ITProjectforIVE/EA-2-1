@@ -1,0 +1,98 @@
+body{
+  display:flex;
+  flex-wrap: wrap;
+   background-color:burlywood;
+   color:rgb(24, 17, 17);
+   text-shadow:
+  1px 1px 2px rgb(182, 194, 16),
+  0 0 1em rgb(61, 61, 202),
+  0 0 0.2em rgb(12, 142, 154);
+}
+
+h1{
+  
+}
+.sidebar {
+  margin: 0%;
+  padding: 0%;
+  width: 250px; 
+  height: 100%; 
+  background-color: #082456; 
+  color: white; 
+  position: fixed; 
+}
+
+.sidebar h2 {
+  text-align: center; 
+}
+
+.sidebar ul {
+  list-style-type: none; 
+}
+
+.sidebar ul li {
+  padding: 15px; 
+}
+
+.sidebar ul li a {
+  color: white; 
+  text-decoration: none; 
+}
+
+main{
+margin-left: 250px; 
+    padding: 20px; 
+}
+.sidebar ul li a:hover {
+  background-color: #575757; 
+}
+.card {
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  width: auto;
+  height: auto;
+  border-radius: 30px;
+  border:#072bc8 2px solid;
+  box-shadow:1px 1px 2px rgb(187, 19, 193),
+  0 0 1em rgb(61, 61, 202),
+  0 0 0.2em rgb(196, 5, 75); ;
+}
+.container{
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 30px;
+  border:#072bc8 2px solid;
+}
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: auto;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-radius: auto;
+  }
+  
+
+.music{
+  display: subgrid;
+  flex-direction: row;
+}
+audio{
+  color:bisque; 
+  height: 50px;
+  width: 350px;
+  background: #072bc8;
+  box-shadow: 0 0 2px 0 rgba(68, 205, 255, 0.724);
+  font-family: arial;
+  font-size: 0.75em;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 6px auto;
+  border-radius: 40px;
+}
+
+.txt{
+  border-radius: 30px;
+  border:#072bc8 2px solid;
+}
