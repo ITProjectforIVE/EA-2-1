@@ -61,13 +61,15 @@ margin-left: 250px;
   box-shadow:1px 1px 2px rgb(187, 19, 193),
   0 0 1em rgb(61, 61, 202),
   0 0 0.2em rgb(196, 5, 75);
-  margin: auto;
+  margin: 10px;
+  padding: 10px;
 }
 .container{
   background-color: whitesmoke;
   color: black;
   border-radius: 20px;
   border:#072bc8 2px solid;
+  margin: 10px;
 }
 ul {
     list-style-type: none;
