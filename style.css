@@ -1,17 +1,13 @@
 body{
   display:flex;
   flex-wrap: wrap;
-  background:linear-gradient(white,lightgrey,darkgrey,grey,rgb(65, 65, 65));
+  background:white;
   color:rgb(24, 16, 16);
   text-shadow:
   1px 1px 2px rgba(182, 194, 16, 0.848),
   0 0 1em rgb(61, 61, 202),
   0 0 0.2em rgb(104, 11, 176);
   background-attachment: fixed;
-}
-
-h1{
-  
 }
 
 ul {
@@ -46,13 +42,23 @@ li a:hover:not(.active) {
   bottom: 20%;
 }
 main{
-
     padding: 20px; 
     margin: 20px;
     justify-content: center;
     align-items:center;
 }
 
+aside{
+  height: 40px;
+  padding: 20px; 
+  margin: 20px;
+  justify-content: left;
+  align-items:left;
+}
+
+.Musicside{
+  background-color:(darkgrey);
+}
 .card { 
   display:block;
   flex-direction: column;
@@ -100,8 +106,8 @@ audio{
   border:#072bc8 2px solid;
 }
 img{
-  width: 425px;
-  height: 350px;
+  width: 350px;
+  height: 300px;
 }
 p{
   font-size: 18px;
