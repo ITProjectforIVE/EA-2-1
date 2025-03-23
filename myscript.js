@@ -1,4 +1,4 @@
-function ShowClothes(e){
-  alert("music.html");
+function ShowChoice(){
+  alert("You have choose"+" !");
   
 }
