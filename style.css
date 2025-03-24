@@ -1,13 +1,14 @@
 body{
   display:flex;
   flex-wrap: wrap;
-  background:white;
-  color:rgb(24, 16, 16);
+  background:rgb(3, 76, 106);
+  color:aliceblue;
   text-shadow:
-  1px 1px 2px rgba(182, 194, 16, 0.848),
-  0 0 1em rgb(61, 61, 202),
-  0 0 0.2em rgb(104, 11, 176);
+  1px 1px 2px rgba(108, 194, 16, 0.955),
+  0 0 1em rgb(255, 225, 0),
+  0 0 0.2em rgb(237, 137, 5);
   background-attachment: fixed;
+  font-size:18px;
 }
 
 ul {
@@ -15,7 +16,7 @@ ul {
   margin: auto;
   padding: auto;
   overflow: hidden;
-  background-color: #092de5;
+  background-color: #27272a;
   position:fixed;
   top: 0;
   width: auto;
@@ -58,12 +59,12 @@ aside{
 }
 
 .Musicside{
-  background-color:(darkgrey);
+  background-color:(rgb(82, 79, 79));
 }
 .card { 
   display:block;
   flex-direction: column;
-  background: whitesmoke;
+  background: rgb(74, 72, 72);
   width: fill;
   height: fill;
   border-radius: 5px;
@@ -107,11 +108,9 @@ audio{
   border:#072bc8 2px solid;
 }
 img{
-  width: 350px;
-  height: 300px;
-}
-p{
-  font-size: 18px;
+  margin:4px;
+  width: 400px;
+  height: 330px;
 }
 
 form{
@@ -119,7 +118,11 @@ form{
   height: 600px;
   justify-self: center;
 }
-
+iframe{
+  margin:4px;
+  width: 400px;
+  height: 330px;
+}
 @media  screen and (max-width:700px) {
   img{
     display:none;
@@ -127,8 +130,17 @@ form{
   iframe{
     display:none; 
   }
-  .navbar{
-    width:auto;
-    height: auto;
+
+  body{
+  background-color: whitesmoke;
+  color:black;
+  text-shadow:
+  1px 1px 2px rgba(182, 194, 16, 0.848),
+  0 0 1em rgb(228, 69, 6),
+  0 0 0.2em rgb(104, 11, 176);
+  background-attachment: fixed;
+  }
+  .card{
+    background-color: darkgrey;
   }
 }
