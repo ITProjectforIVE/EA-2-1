@@ -14,35 +14,45 @@
         <li><a href="HowToPlay.html">How to Play</a></li>
         <li><a href="AboutUs.html">About</a></li>
         <li><a href="SignUp.html">Sign Up</a></li>
-        <li><a  href="Music.html">Music</a></li>
       </ul>
     </div>
     <main>
         <h1>Join us now!</h1>       
-        <form>
+        <form onSubmit="return SignIn()">
       <div class="card" width="300px" height="400px">   
-        <p> Username:  </p>
+      <p> Username:  </p>
        <input type="text" class="txt" required></input>
        <p> Email: </p>
        <input type="email" class="txt" required></input>
-       <p> telephone: </p>
-       <input type="tel" class="txt" required></input>
+       <p> Telephone: </p>
+       <input type="tel" class="txt"  min="7" max="20" required></input>
        <p>Set Password:</p>
-       <input type="password" class="txt" required></input>
+       <input type="password" class="txt"  min="7" max="20" required></input>
        <p> Re-enter Password:</p>
        <input type="password" class="txt"></input>
        <br />
-      <input type = "radio" name="choice"> Person</input>
-      <input type = "radio" name="choice"> Team </input>
+       <p>Choose Team</p>
+      <input type = "radio" name="choice"> Axis</input>
+      <input type = "radio" name="choice"> Allies </input>
       <br />
       <br />
-      <div>Choose a date:</div>
+      <p>Choose a date:</p>
       <input type = "date" ></input>
+      <br />
+      <p>Choose war game:</p>
+      <select name="war" id="war">
+        <option value="Western">Western Front (Europe) </option>
+        <option value="Eastern">Eastern Front (Europe)</option>
+        <option value="Asia">Asia - Pacific War</option>
+      </select>
       <br />
       <input type = "submit" value="Sign up!"></input>
       <input type = "reset" value="Clear from"></input>
         </div>
     </form>
 </main>
+<aside> 
+  <iframe src="Music.html"></iframe>
+</aside>
 </body>
 </html>
