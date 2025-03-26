@@ -1,4 +1,11 @@
-function ShowChoice(){
-  alert("You have choose"+" !");
-  
+function Asia(){
+  alert("");
+}
+
+function West(){
+  alert("");
+}
+
+function East(){
+  alert("");
 }
