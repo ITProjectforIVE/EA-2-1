@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="myscript.js"></script>
     <title>Music</title>
     <style>
         body{
             background: linear-gradient(90deg, rgba(2,2,42,1) 0%, rgba(1,18,115,1) 20%, rgba(0,80,194,1) 40%, rgba(11,90,170,1) 60%, rgba(31,134,208,1) 80%, rgba(5,218,241,1) 100%);
-            /* color goes lighter every 20%)*/
+            /*Blue color goes lighter every 20%)*/
             position: sticky;
         }
     </style>
 </head>
 <body class="Musicside">  
     Music Box!
-    <br />
-    <div class="card">
-    <audio controls>
-        <source src="horse.mp3" type="audio/mpeg">
-      </audio>
-    </div>
+    <main>
+    <audio id="audio" controls>
+        <source id="audio-source" src="./Music/USSR.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <button onclick="nextSong()">Next Song</button>
+    <div id="current-song"></div>
+    </main>
 </body>
 </html>
