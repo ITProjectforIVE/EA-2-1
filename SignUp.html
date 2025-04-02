@@ -23,18 +23,18 @@
     </div>
     <main>
         <h1>Join us now!</h1>       
-        <form onSubmit=return >
-      <div class="card" width="300px" height="400px">   
+        <form name="Sign" onSubmit=return >
+      <div class="card" width="auto" height=auto> 
       <p> Username:  </p>
-       <input type="text" class="txt" title="Please input a email address"required></input>
+       <input type="text" class="txt"  name="name" pattern="^[A-Z][a-z]*" title="Capital first character" required="required"></input>
        <p> Email Address: </p>
-       <input type="email" class="txt" required></input>
+       <input type="email" class="txt"  name="email" required="required"></input>
        <p> Telephone: </p>
-       <input type="tel" class="txt"  pattern="[0-9]{8}"required></input>
+       <input type="tel" class="txt" name="tel"  pattern="[0-9]{8}" required="required"></input>
        <p>Set Password:</p>
-       <input type="password" class="txt"  pattern="^[A-Za-z]{*}" required></input>
+       <input type="password" class="txt"  pattern="^#([0-9a-fA-F]*)$" required="required"></input>
        <p> Re-enter Password:</p>
-       <input type="password" class="txt"></input>
+       <input type="password" class="txt" pattern="^#([0-9a-fA-F]*)$"></input>
        <br />
        <p>Choose Team</p>
       <input type = "radio" name="choice" required="required"> Axis</input>
@@ -42,13 +42,13 @@
       <br />
       <br />
       <p>Choose a date:</p>
-      <input type = "date" ></input>
+      <input type="text" pattern="([01]?\d|2[0-3]):([0-5]?\d):([0-5]?\d)" required="required"></input>
       <br />
       <p>Choose war game:</p>
       <select name="war" id="war">
-        <option value="Western">Western Front (Europe) </option>
-        <option value="Eastern">Eastern Front (Europe)</option>
-        <option value="Asia">Asia - Pacific War</option>
+        <option value="Western" name="wargame">Western Front (Europe) </option>
+        <option value="Eastern" name="wargame">Eastern Front (Europe)</option>
+        <option value="Asia" name="wargame">Asia - Pacific War</option>
       </select>
       <br />
       <input type = "submit" value="Sign up!"></input>

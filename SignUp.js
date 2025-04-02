@@ -1,13 +1,24 @@
-document.getElementById('signupForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
-    const username = document.getElementById('username').value;
-    const email = document.getElementById('email').value;
-    const telephone = document.getElementById('telephone').value;
-    const password = document.getElementById('password').value;
-    const repassword = document.getElementById('repassword').value;
-    const choice = document.querySelector('input[name="choice"]:checked').value;
-    const date = document.getElementById('date').value;
-    const war = document.getElementById('war').value;
+function print_result() 
+  {
+    /* --- (f) --- */
+    var name = document.Sign.name.value;
+    alert("Name = " + name);
+    var email = document.Sign.email.value;
+    alert("Email = " + email);
+    var telephone = document.Sign.tel.value;
+    alert("telephone = " + telephone);
+    var date = document.Sign.date.value;
+    alert("Date = " + date);
+    var choice;
+     if (document.Sign.choice[0].checked)
+    choice = document.Sign.gender[0].value;
+    else
+     choice = document.Sign.choice[1].value;
+    alert("choice = " + choice);
 
-    alert(`Username: ${username}\nEmail: ${email}\nTelephone: ${telephone}\nPassword: ${password}\nRe-entered Password: ${repassword}\nTeam Choice: ${choice}\nDate: ${date}\nWar Game: ${war}`);
-});
+
+    var index = document.Sign.sport.selectedIndex;
+    var wargame_val = document.Sign.wargame.options[index].value;
+    var wargame_text = document.Sign.wargame.options[index].text;
+    alert("Favourite Sport = " + wargame_text + " " + wargame_val);
+  }
