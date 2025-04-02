@@ -77,42 +77,24 @@ aside{
 
 
 button{
-  align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #260dca 50%,#057179);
+  justify-content: center;
+  background: linear-gradient(144deg,#e6ff0a, #16df27 50%,#09d6e4);
   border: 0;
   border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   box-sizing: border-box;
-  color: rgb(246, 243, 105);
+  color: rgb(3, 37, 129);
   display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 3px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  padding: 5px;
   text-decoration: none;
   user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   white-space: nowrap;
-  cursor: pointer;
 }
-
-button span {
-  background-color: rgb(5, 6, 45);
-  padding: 16px 24px;
-  border-radius: 6px;
-  width: 100%;
+button span{
+  width:100%;
   height: 100%;
-  transition: 300ms;
 }
-
-button :hover  {
-  color:aliceblue;
-}
-
 
 ul {
     list-style-type: none;
@@ -133,7 +115,16 @@ input{
   flex-direction: row;
 }
 audio{
-  float: right;
+  display: block;
+  color:goldenrod;
+  border-radius: 30px;
+  margin:5px; /*change audio css*/
+}
+#audio{
+  display: block;
+  color:goldenrod;
+  border-radius: 30px;
+  margin:5px; /*change audio css*/
 }
 .txt{
   border-radius: 30px;
