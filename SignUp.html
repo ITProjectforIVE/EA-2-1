@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="SignUp.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Sign Up!</title>
 </head>
@@ -16,27 +17,28 @@
         <li><a href="AboutUs.html">About</a></li>
         <li><a  href="Equip.html">Equipment</a></li>
         <li><a  href="Compand.html">Battleground</a></li>
+        <li><a  href="Weapon.html">Weapon</a></li>
         <li><a href="SignUp.html">Sign Up</a></li>
       </ul>
     </div>
     <main>
         <h1>Join us now!</h1>       
-        <form onSubmit="return SignIn()">
+        <form onSubmit=return >
       <div class="card" width="300px" height="400px">   
       <p> Username:  </p>
-       <input type="text" class="txt" required></input>
-       <p> Email: </p>
+       <input type="text" class="txt" title="Please input a email address"required></input>
+       <p> Email Address: </p>
        <input type="email" class="txt" required></input>
        <p> Telephone: </p>
-       <input type="tel" class="txt"  min="7" max="20" required></input>
+       <input type="tel" class="txt"  pattern="[0-9]{8}"required></input>
        <p>Set Password:</p>
-       <input type="password" class="txt"  min="7" max="20" required></input>
+       <input type="password" class="txt"  pattern="^[A-Za-z]{*}" required></input>
        <p> Re-enter Password:</p>
        <input type="password" class="txt"></input>
        <br />
        <p>Choose Team</p>
-      <input type = "radio" name="choice"> Axis</input>
-      <input type = "radio" name="choice"> Allies </input>
+      <input type = "radio" name="choice" required="required"> Axis</input>
+      <input type = "radio" name="choice" required="required"> Allies </input>
       <br />
       <br />
       <p>Choose a date:</p>
