@@ -5,10 +5,10 @@ let line = "You have choose " + c +"!\n"; //show country name
 	    alert(line+" Defend your homeland and counter attack the Axis!");
 	}
     else if(c =="Germany"||c == "Italy"){
-        alert(line+" Invade other country as soon as possible!");
+        alert(line+" Invade Europe as soon as possible!");
     }
     else if(c== "USA"){
-        alert("Help British and France land on the Europe!");
+        alert(line+"Help British and France land on the Europe!");
     }
     else if(c == null){
         return false;
@@ -26,7 +26,7 @@ let line = "You have choose " + c +"!\n";
 	    alert(line+"Defend your homeland and counter attack the Berlin!");
 	}
     else if(c=="Germany"){
-        alert(line+"Invade Moscow!");
+        alert(line+"Invades Moscow!");
     }
     else if(c=="Finland"){
         alert(line+"Protect your country between Soviet Union and Germany!");
@@ -50,7 +50,7 @@ function Asiacountry(){
             alert(line+"Try to land on Japan and  nuke!");
         }
         else if(c=="Japan"){
-            alert(line+"Invade the China and Pacific Islands!");
+            alert(line+"Invades China and Pacific Islands!");
         }
         else if(c == null){
             return false;
@@ -59,4 +59,11 @@ function Asiacountry(){
             alert("Invalid country name!");
             return Asiacountry();
         }
+}
+
+function Dunkirk(){
+    document.getElementById("Dunkirk").innerHTML = "The union of ";
+}
+function Stalingrad(){
+    document.getElementById("Stalingrad").innerHTML = "";
 }
