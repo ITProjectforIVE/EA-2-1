@@ -9,6 +9,7 @@ body{
   0 0 0.2em rgb(237, 137, 5);
   font-size:18px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* decorate the font of all content */
 }
 
 ul {
@@ -41,12 +42,25 @@ li a:hover:not(.active) {
   position: fill;
   top:20%;
   bottom: 20%;
-  width: 100%;
+  width: 100%; /* navbar style*/
+}
+.input{
+  justify-content: center;
+  background: linear-gradient(144deg,#ff990a, #e68505 50%,#e8ad0a);
+  border: 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: rgba(3, 11, 82, 0.594);
+  display: flex;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  padding: 5px;
 }
 
+
 main{
-  padding: 20px; 
-  margin: 20px;
+  padding: 15px; 
+  margin: 15px;
   justify-content: right;
   align-items:center;
 }
@@ -59,7 +73,6 @@ aside{
   align-items:left;
 }
 
-
 .card { 
   display:block;
   flex-direction: column;
@@ -67,12 +80,12 @@ aside{
   width: fill;
   height: fill;
   border-radius: 5px;
-  border:#040c31 2px solid;
+  border:#040c31 2px solid;/* make the box become Squircle and have black border line*/
   box-shadow:1px 1px 2px rgb(16, 209, 71),
   0 0 1em rgb(191, 136, 19),
   0 0 0.2em rgba(36, 123, 5, 0.453);
   margin: 10px;
-  padding: 10px;
+  padding: 10px; /* change the style of card*/
 }
 
 
@@ -133,10 +146,11 @@ audio{
 img{
   margin:4px;
   width: 400px;
-  height: 300px;
+  height: 300px;/*Without hover the image*/
 }
 img:hover{
-  opacity: 0.75; 
+  opacity: 0.7; 
+  border: rgba(30, 210, 129, 0.854) 4px solid;
   /*Animation Effect when hover the img*/
 }
 form{

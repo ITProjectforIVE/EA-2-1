@@ -4,7 +4,7 @@ const songs = [
     { name: "USA", file: "./Music/USA.mp3"},
     { name: "Japan", file: "./Music/Japan.mp3"},
     { name: "China", file: "./Music/China.mp3"},
-    { name: "USSR", file: "./Music/USSR.mp3"},
+    { name: "Soviet Union", file: "./Music/USSR.mp3"},
     { name: "Finland", file: "./Music/Finland.mp3"},
 ];
 let currentSongIndex = 0;
