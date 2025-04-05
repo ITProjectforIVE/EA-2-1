@@ -6,29 +6,18 @@ function print_result()
     alert("Email = " + email);
     var telephone = document.Sign.tel.value;
     alert("telephone = " + telephone);
+    var choice;
+    if (document.Sign.choice[0].checked)
+    choice = document.Sign.choice[0].value;
+    else
+    choice = document.Sign.choice[1].value;
+    alert('Team: ' + choice);
+    var password = document.Sign.password.value;
+    alert("Password = " + password);
     var date = document.Sign.date.value;
     alert("Date = " + date);
-    var index = document.Sign.wargame.selectedIndex;
-    var wargame_val = document.Sign.wargame.options[index].value;
-    var wargame_text = document.Sign.wargame.options[index].text;
-    alert("Battle  = " + wargame_text + " " + wargame_val);
-    var passwd1 = document.Sign.passwd1
-  }
-var i = 0;
-function move() {
-    if (i == 0) {
-      i = 1;
-      var elem = document.getElementById("myBar");
-      var width = 1;
-      var id = setInterval(frame, 10);
-      function frame() {
-        if (width >= 100) {
-          clearInterval(id);
-          i = 0;
-        } else {
-          width++;
-          elem.style.width = width + "%";
-        }
-      }
-    }
+    var index = document.Sign.war.selectedIndex;
+    var wargame_val = document.Sign.war.options[index].value;
+    var wargame_text = document.Sign.war.options[index].text;
+    alert("Battle  = " + wargame_text + " ");
   }
