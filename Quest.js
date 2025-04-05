@@ -62,8 +62,20 @@ function Asiacountry(){
 }
 
 function Dunkirk(){
-    document.getElementById("Dunkirk").innerHTML = "The union of ";
+    const Allies = "<fieldseet><legend>Allies:</legend>Escape from the Dunkirk before the germany bingo all of the allies!</fieldseet>";
+    const Axis = "<fieldseet><legend>Axis:</legend>Bingo all the allies army!</fieldseet>";
+    let text = document.getElementById("Dunkirk");
+    text.innerHTML = Allies+Axis;
 }
 function Stalingrad(){
-    document.getElementById("Stalingrad").innerHTML = "";
+    const Allies = "<fieldseet><legend>Allies:</legend>Bingo all the German army!</fieldseet>";
+    const Axis = "<fieldseet><legend>Axis:</legend>Bingo all the Soviet Union army!</fieldseet>";
+    let text = document.getElementById("Stalingrad");
+    text.innerHTML = Allies+Axis;
+}
+function IwoJima(){
+    const Allies = "<fieldseet><legend>Allies:</legend>Occupy the all the base of Iwo Jima island!</fieldseet>";
+    const Axis = "<fieldseet><legend>Axis:</legend>Defend all the military base!</fieldseet>";
+    let text = document.getElementById("IwoJima");
+    text.innerHTML = Allies+Axis;
 }
