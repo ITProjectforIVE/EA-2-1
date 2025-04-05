@@ -1,6 +1,6 @@
 function Westcountry(){
 let c = prompt("Please input country name",""); //show prompt box
-let line = "You have choose " + c +"!\n"; //show country name
+let line = "You have chosen " + c +"!\n"; //show country name
 	if (c == "British" || c == "France"){
 	    alert(line+" Defend your homeland and counter attack the Axis!");
 	}
@@ -21,7 +21,7 @@ let line = "You have choose " + c +"!\n"; //show country name
 
 function Eastcountry(){
 let c = prompt("Please input country name","");
-let line = "You have choose " + c +"!\n";
+let line = "You have chosen " + c +"!\n";
     if (c == "Soviet Union"){
 	    alert(line+"Defend your homeland and counter attack the Berlin!");
 	}
@@ -42,7 +42,7 @@ let line = "You have choose " + c +"!\n";
 
 function Asiacountry(){
     let c = prompt("Please input country name","");
-    let line = "You have choose " + c +"!\n";
+    let line = "You have chosen " + c +"!\n";
         if (c == "China"||c =="Soviet Union"){
             alert(line+"Defend your homeland!");
         }
