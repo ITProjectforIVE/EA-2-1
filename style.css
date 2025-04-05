@@ -18,11 +18,13 @@ ul {
   padding: auto;
   overflow: hidden;
   background-color: #27272a;
-  position:sticky; /*keep navbar on the top*/
-  top: 0;
+  position:fixed; /*keep navbar on the top*/
+  top:0;
   left:0;
-  width: auto;
+  width: 100%;
+  border-radius: auto;
 }
+
 li {
   float: left;
 }
@@ -87,8 +89,6 @@ aside{
   margin: 10px;
   padding: 10px; /* change the style of card*/
 }
-
-
 button{
   justify-content: center;
   background: linear-gradient(144deg,#e6ff0a, #16df27 50%,#09d6e4);
@@ -109,16 +109,6 @@ button span{
   height: 100%;
 }
 
-ul {
-    list-style-type: none;
-    margin: auto;
-    padding: auto;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    border-radius: auto;
-  }
 input{
   margin: 5px;
   padding: 5px;
@@ -128,12 +118,6 @@ input{
   flex-direction: row;
 }
 audio{
-  display: block;
-  color:goldenrod;
-  border-radius: 30px;
-  margin:5px; /*change audio css*/
-}
-#audio{
   display: block;
   color:goldenrod;
   border-radius: 30px;
@@ -163,27 +147,43 @@ iframe{
   width: 400px;
   height: 300px;
 }
-@media  screen and (max-width:700px) {
-  img{
+@media screen and (max-width:700px) {
+ul{list-style-type: none;
+  margin: auto;
+  padding: auto;
+  overflow: hidden;
+  background-color: #27272a;
+  position:fixed; /*keep navbar on the top*/
+  top:0;
+  left:0;
+  width: 100%;
+  border-radius: auto;
+  }
+.navbar{
+    position: fill;
+    top:10%;
+    bottom: 10%;
+    width: 100%; /* navbar style*/
+  }
+img{
     display:none;
   }
-  iframe{
+iframe{
     display:none; 
   }
-  button {
+button {
     font-size: 24px;
     min-width: 196px;
   }
-  body{
-  background-image: whitesmoke;
-  color:lightgoldenrodyellow;
+body{
+  color:rgb(228, 228, 7);
   text-shadow:
-  1px 1px 2px rgba(182, 194, 16, 0.848),
+  1px 1px 2px rgba(16, 161, 194, 0.848),
   0 0 1em rgb(228, 69, 6),
   0 0 0.2em rgb(104, 11, 176);
   background-attachment: fixed;
   }
-  .card{
+.card{
     background-color: darkgrey;
   }
 }
