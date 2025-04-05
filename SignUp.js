@@ -6,14 +6,14 @@ function print_result()
     alert("Email = " + email);
     var telephone = document.Sign.tel.value;
     alert("telephone = " + telephone);
+    var password = document.Sign.password.value;
+    alert("Password = " + password);
     var choice;
     if (document.Sign.choice[0].checked)
     choice = document.Sign.choice[0].value;
     else
     choice = document.Sign.choice[1].value;
     alert('Team: ' + choice);
-    var password = document.Sign.password.value;
-    alert("Password = " + password);
     var date = document.Sign.date.value;
     alert("Date = " + date);
     var index = document.Sign.war.selectedIndex;
